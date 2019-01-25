@@ -102,6 +102,7 @@ then the relevance score of page p for this phrase is
 
 
 
+##                 class MySet
  Write a Java class MySet using Java generic's
 (https://docs.oracle.com/javase/tutorial/java/generics/types.html).
 The class should be represented as MySet<X> where X is the datatype
@@ -112,14 +113,19 @@ represents a union of the current set and the otherSet.
 - MySet<X> intersection(MySet<X> otherSet): Return My-
 Set which represents an intersection of the current set and the
 otherSet.
+  
+  ##            class MyLinkedList
  Write a Java class MyLinkedList using Java generic's. It should contain
 the standard methods of a linked list.
+
+##                class Position
  Write a Java class Position that represents a tuple <page p, word
 position i>.
 - Position(PageEntry p, int wordIndex) Constructor method.
 - PageEntry getPageEntry() Return p
 - int getWordIndex() Return wordIndex
   
+  ##          class WordEntry
  Write a Java class WordEntry. For a string str, this class stores the list
 of word indice's where str is present in the document(s).
   - WordEntry(String word): Constructor method. The argument
@@ -133,6 +139,7 @@ turn a linked list of all position entries for str.
 - float getTermFrequency(String word): Return the term fre-
 quency of the word in a webpage.
   
+  ##        class PageIndex
    Write a Java class PageIndex which stores one word-entry for each
 unique word in the document.
 - void addPositionForWord(String str, Position p): Add po-
@@ -143,6 +150,7 @@ p.
 - LinkedList<WordEntry> getWordEntries(): Return a list of
 all word entries stored in the page index.
   
+  ##            class PageEntry
  Write a Java class PageEntry to store the the information related to a
 webpage. It should contain following methods:
 - PageEntry(String pageName): Constructor method. The argu-
@@ -151,6 +159,7 @@ page index.
 - PageIndex getPageIndex(): This method returns the page in-
 dex of this web-page.
 
+ ##               class MyHashTable
  Write a Java class MyHashTable that implements the hashtable used
 by the InvertedPageIndex. It maps a word to its word-entry.
 - private int getHashIndex(String str): Create a hash func-
@@ -162,6 +171,7 @@ to the hashtable: stringName(w) -> positionList(w). If no word-
 entry exists, then create a new word entry. However, if a word-
 entry exists, then merge w with the existing word-entry.
 
+  ##          class InvertedPageIndex
  Write a Java class InvertedPageIndex which contains the following
 methods:
 - void addPage(PageEntry p): Add a new page entry p to the
@@ -170,6 +180,7 @@ inverted page index.
 Return a set of page-entries of webpages which contain the word
 str.
   
+  ##         class SearchEngine
  Write a Java class SearchEngine. This is the class that we will use as
 an interface to the search engine. It should contain following methods:
 - SearchEngine(): This is the constructor method. It should cre-
